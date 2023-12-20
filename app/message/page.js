@@ -17,7 +17,7 @@ export default function Page(params) {
             try {
                 
                 const nombre = async ()=> {
-                const url = `http://localhost:5000/chatlist`
+                const url = `http://18.230.95.57/chatlist`
                 let respuesta = await fetch (url)
                 let response = await respuesta?.json();
                 return response;        
@@ -53,7 +53,7 @@ export default function Page(params) {
         if(num && tlf.length >= 11 && msj !=='' && msj){
 
            try {
-            await fetch('http://localhost:5000/sendmessage', {
+            await fetch('http://18.230.95.57/sendmessage', {
                 method: "POST", 
                  headers: {
                    "Content-Type": "application/json",
@@ -98,7 +98,7 @@ export default function Page(params) {
         if(num && tlf.length >= 11 && msj !=='' && msj){
 
            try {
-            await fetch('http://localhost:5000/sendmessage', {
+            await fetch('http://18.230.95.57/sendmessage', {
                 method: "POST", 
                  headers: {
                    "Content-Type": "application/json",

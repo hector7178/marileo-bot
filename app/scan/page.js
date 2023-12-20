@@ -11,7 +11,7 @@ export default function Page(params) {
         try {
             
             const nombre = async ()=> {
-            const url = `http://localhost:5000`
+            const url = `http://18.230.95.57`
             let respuesta = await fetch (url)
             let response = await respuesta?.json();
             return response;        
