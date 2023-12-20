@@ -8,7 +8,7 @@ module.exports = {
       user : 'ubuntu',
       host : '18.231.157.113',
       ref  : 'origin/main',
-      repo : 'https://github.com/hector7178/client-multiagent.git',
+      repo : 'https://github.com/hector7178/marileo-bot.git',
       path : '/home/ubuntu',
       'pre-deploy-local': '',
       'post-deploy' : 'source ~/nvm/nvm.sh && npm install && pm2 reload ecosystem.config.js --env production',
