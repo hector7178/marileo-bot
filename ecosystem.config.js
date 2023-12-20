@@ -11,7 +11,7 @@ module.exports = {
       repo : 'https://github.com/hector7178/marileo-bot.git',
       path : '/home/ubuntu',
       'pre-deploy-local': '',
-      'post-deploy' : 'source ~/nvm/nvm.sh && npm install && pm2 reload ecosystem.config.js --env production',
+      'post-deploy' : 'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env production',
       'pre-setup': '',
       'ssh-options':'ForwardAgent=yes'
     }
