@@ -11,8 +11,17 @@ export default function Page(params) {
         try {
             
             const nombre = async ()=> {
-            const url = `http://18.230.95.57`
-            let respuesta = await fetch (url)
+            const url = `http://18.230.95.57/`
+            let respuesta = await fetch (url,  {
+                method: "GET",
+                mode: "no-cors", // no-cors, *cors, same-origin
+                cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+                credentials: "omit", // include, *same-origin, omit
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+               })
             let response = await respuesta?.json();
             return response;        
             }
