@@ -19,9 +19,8 @@ export default function Page(params) {
                 credentials: "omit", // include, *same-origin, omit
                 headers: {
                   "Content-Type": "application/json",
-                },
-                referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-               })
+                }
+             })
             let response = await respuesta?.json();
             return response;        
             }
