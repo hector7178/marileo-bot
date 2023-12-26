@@ -18,7 +18,7 @@ function page() {
     try {
                 
       const nombre = async ()=> {
-      const url = `http://localhost:5000/respuestas`
+      const url = `http://18.230.95.57:5000/respuestas`
       let respuesta = await fetch (url)
       let response = await respuesta?.json();
       return response;        

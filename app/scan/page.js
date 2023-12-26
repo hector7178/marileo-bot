@@ -11,10 +11,10 @@ export default function Page(params) {
         try {
             
             const nombre = async ()=> {
-            const url = `http://18.230.95.57/`
+            const url = `http://18.230.95.57:5000/`
             let respuesta = await fetch (url,  {
                 method: "GET",
-                mode: "no-cors", // no-cors, *cors, same-origin
+                referrerPolicy:'no-referrer',// no-cors, *cors, same-origin
                 cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
                 credentials: "omit", // include, *same-origin, omit
                 headers: {
