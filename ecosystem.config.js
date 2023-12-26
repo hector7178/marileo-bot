@@ -1,6 +1,8 @@
 module.exports = {
   apps : [{
-    script: 'npm start'}],
+    script: 'npm start',
+    name:'cliente'
+  }],
 
   deploy : {
     production : {
