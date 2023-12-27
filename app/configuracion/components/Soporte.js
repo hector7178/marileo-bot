@@ -55,18 +55,18 @@ console.log(dataLista)
       </div>
       :null
     }
-    <span className='text-2xl text-black'>Soporte</span>
+    <span className=' text:md md:text-lg lg:text-2xl text-black'>Soporte</span>
     <form className='grid grid-cols-1 lg:grid-cols-2 items-center justify-center h-full w-full gap-2  p-4'>
      <div className='lg:col-span-2 col-span-1 w-3/4 h-fit flex flex-col'>
-      <label className='text-gray-600 text-lg'>Palabra de activacion:</label>
+      <label className='text-gray-600 text-sm md:text-md lg:text-lg'>Palabra de activacion:</label>
       <input
        type='text' 
-       className='text-black text-lg border-gray-200 border-2'
+       className='text-black text-sm md:text-md lg:text-lg border-gray-200 border-2'
        onChange={(e)=>setActivacion(e.target.value)}
        defaultValue={props.activacion}></input>
      </div>
      <div className='flex flex-col lg:col-span-2 col-span-1'>
-      <label className='text-gray-500 text-md'>Respuesta:</label>
+      <label className='text-gray-500 text-sm md:text-md '>Respuesta:</label>
 
       <textarea 
       onChange={handle}
@@ -74,15 +74,15 @@ console.log(dataLista)
       className='h-[30vh] text-black border-2 border-gray-200 rounded-lg' defaultValue={props.data.texto}></textarea>
      </div>
      <div className='lg:col-span-2 col-span-1 w-3/4 h-fit flex flex-col'>
-      <label className='text-gray-600 text-lg'>Url de formulario:</label>
+      <label className='text-gray-600 text-sm md:text-md lg:text-lg'>Url de formulario:</label>
       <input
        type='text' 
        name='url'
-       className='text-black text-lg border-gray-200 border-2'
+       className='text-black text-sm md:text-md lg:text-lg border-gray-200 border-2'
        onChange={handle}
        defaultValue={props.data.url}></input>
      </div>
-    <button type='submit' className='w-full h-fit text-lg rounded-md text-white p-2 bg-blue-600 lg:col-span-2 hover:opacity-70' onClick={handleSubmit}> Actualizar lista </button>
+    <button type='submit' className='w-full h-fittext-sm md:text-md lg:text-lg rounded-md text-white p-2 bg-blue-600 lg:col-span-2 hover:opacity-70' onClick={handleSubmit}> Actualizar lista </button>
     </form>
     
 

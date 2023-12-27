@@ -51,7 +51,7 @@ function page() {
         </svg>
       </span>
       
-      <ul className='h-full w-full py-8 p-4 gap-4 flex flex-col'>
+      <ul className='h-full w-full py-8 md:p-4 p-2 gap-4 flex flex-col'>
         {!key?
         <span className='text-black'>Cargando...</span>
         :
@@ -62,7 +62,7 @@ function page() {
           const strg=firstLetter?.toUpperCase() + rest;
           return <li 
           key={index} 
-          className={`cursor-pointer border-l-2 text-lg w-full h-fit p-2 ${dataSelected===e? 'border-blue-600 text-blue-600 indent-6':'border-neutral-500 indent-2 text-black'}`}
+          className={`cursor-pointer border-l-2  sm:text:sm md:text-md lg:text-lg w-full h-fit p-2 ${dataSelected===e? 'border-blue-600 text-blue-600 indent-6':'border-neutral-500 indent-2 text-black'}`}
           onClick={()=>setDataSelected(e)}
           >{strg}</li>
         })}
@@ -80,8 +80,8 @@ function page() {
 
     </div>
     }
-    <section className={`absolute h-[80%] top-[10%]  w-2/3 ${show? 'right-[16.5%] md:right-0':'right-[16.5%]'}  pt-16 md:p-4`}>
-      <div className='w-full h-full  bg-white rounded-lg p-6'>
+    <section className={`absolute h-[80%] top-[10%] w-full md:w-2/3 ${show? 'right-[16.5%] md:right-0':'right-[16.5%]'}  pt-16 md:p-4`}>
+      <div className='w-full h-full  bg-white rounded-lg p-2 md:p-6'>
         {
           data?
           dataSelected==="saludo"?
