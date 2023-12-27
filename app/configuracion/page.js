@@ -80,7 +80,7 @@ function page() {
 
     </div>
     }
-    <section className={`absolute h-[80%] top-[10%] w-full md:w-2/3 ${show? 'right-[16.5%] md:right-0':'right-[16.5%]'}  pt-16 md:p-4`}>
+    <section className={`absolute h-[80%] top-[10%] w-full md:w-2/3 ${show? 'right-[16.5%] md:right-0':'md:right-[16.5%] right-0 p-10'}  pt-16 lg:pt-10 md:p-14`}>
       <div className='w-full h-full  bg-white rounded-lg p-2 md:p-6'>
         {
           data?

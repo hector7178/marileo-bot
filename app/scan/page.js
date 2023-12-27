@@ -41,7 +41,7 @@ export default function Page(params) {
  
 
     return (  
-    <main className="bg-gradient-to-b from-blue-300 via-blue-600 to-black flex min-h-screen justify-center grid h-screen  p-4 lg:p-24">
+    <main className="bg-gradient-to-b from-blue-300 via-blue-600 to-black flex min-h-screen justify-center grid h-screen p-24">
        
        <div className='w-[90vw] md:w-[50vw] h-full bg-white rounded-xl grid grid-rows-3 content-center shadow-lg shadow-black'>
         <div className='row-span-2 grid justify-center items-center w-full'>
