@@ -11,7 +11,7 @@ export default function Page(params) {
         try {
             
             const nombre = async ()=> {
-            const url = `http://18.230.95.57:5000/`
+            const url = `http://18.231.170.211:5000/`
             let respuesta = await fetch (url,  {
                 method: "GET",
                 referrerPolicy:'no-referrer',// no-cors, *cors, same-origin
