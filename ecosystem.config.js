@@ -8,7 +8,7 @@ module.exports = {
     production : {
       key: "marileo.pem",
       user : 'ubuntu',
-      host : '15.228.147.124',
+      host : '18.228.212.190',
       ref  : 'origin/main',
       repo : 'https://github.com/hector7178/marileo-bot.git',
       path : '/home/ubuntu',
