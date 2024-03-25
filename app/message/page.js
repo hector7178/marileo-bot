@@ -17,7 +17,7 @@ export default function Page(params) {
             try {
                 
                 const nombre = async ()=> {
-                const url = `http://18.230.95.57:5000/chatlist`
+                const url = `http://15.228.147.124:5000/chatlist`
                 let respuesta = await fetch (url)
                 let response = await respuesta?.json();
                 return response;        

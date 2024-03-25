@@ -15,7 +15,7 @@ function Saludo(props) {
     if(dataLista){
 
        try {
-        await fetch('http://18.231.170.211:5000/actualizar/respuestas', {
+        await fetch('http://15.228.147.124:5000/actualizar/respuestas', {
             method: "POST", 
              headers: {
                "Content-Type": "application/json",
